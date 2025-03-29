@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="icons/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="header__body-logo">
+                    <img src="icons/logo.svg" alt="Logo">
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__aitem">
+                            <a href="#" class="header__menu-link">Каталог</a>
+                        </li>
+                        <li class="header__aitem">
+                            <a href="#" class="header__menu-link">Галерея</a>
+                        </li>
+                        <li class="header__aitem">
+                            <a href="#" class="header__menu-link">О лаборатории</a>
+                        </li>
+                        <li class="header__aitem">
+                            <a href="#" class="header__menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <form action="/search" method="get" class="search">
+                        <label for="search" id="search-icon">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.00077C4.93913 2.00077 3.92172 2.42219 3.17157 3.17234C2.42143 3.92248 2 4.9399 2 6.00077C2 7.06163 2.42143 8.07905 3.17157 8.82919C3.92172 9.57934 4.93913 10.0008 6 10.0008C7.06087 10.0008 8.07828 9.57934 8.82843 8.82919C9.57857 8.07905 10 7.06163 10 6.00077C10 4.9399 9.57857 3.92248 8.82843 3.17234C8.07828 2.42219 7.06087 2.00077 6 2.00077ZM1.13461e-07 6.00077C-0.00012039 5.05647 0.222642 4.12548 0.650171 3.28351C1.0777 2.44154 1.69792 1.71236 2.4604 1.15529C3.22287 0.598219 4.10606 0.228978 5.03815 0.0775993C5.97023 -0.0737798 6.92488 -0.00302249 7.82446 0.284117C8.72404 0.571256 9.54315 1.06667 10.2152 1.73006C10.8872 2.39346 11.3931 3.2061 11.6919 4.1019C11.9906 4.9977 12.0737 5.95136 11.9343 6.88532C11.795 7.81928 11.4372 8.70716 10.89 9.47677L15.707 14.2938C15.8892 14.4824 15.99 14.735 15.9877 14.9972C15.9854 15.2594 15.8802 15.5102 15.6948 15.6956C15.5094 15.881 15.2586 15.9862 14.9964 15.9884C14.7342 15.9907 14.4816 15.8899 14.293 15.7078L9.477 10.8918C8.57936 11.53 7.52335 11.9089 6.42468 11.9869C5.326 12.0648 4.22707 11.8389 3.2483 11.3337C2.26953 10.8286 1.44869 10.0638 0.875723 9.12312C0.30276 8.18244 -0.000214051 7.1022 1.13461e-07 6.00077Z" fill="currentColor"/>
+                            </svg>
+                        </label>
+                        <input type="search" name="seatch" id="search">
+                    </form>
+                    <div class="header__action-login">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 17L15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__body">
+                    <h1>Крупнейшая коллекция природных артефактов</h1>
+                    <p class="hero-text">Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
+                    <a href="#">Исследовать 
+                    <svg width="44" height="15" viewBox="0 0 44 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.7071 8.20711C44.0976 7.81658 44.0976 7.18342 43.7071 6.79289L37.3431 0.428932C36.9526 0.0384078 36.3195 0.0384078 35.9289 0.428932C35.5384 0.819457 35.5384 1.45262 35.9289 1.84315L41.5858 7.5L35.9289 13.1569C35.5384 13.5474 35.5384 14.1805 35.9289 14.5711C36.3195 14.9616 36.9526 14.9616 37.3431 14.5711L43.7071 8.20711ZM0 8.5L43 8.5V6.5L0 6.5L0 8.5Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                </div>                
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 3 2.png" alt="Plant">
+                                    <div class="card__block-number">
+                                        <span>2.4</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 1 (plant)
+                                    </h3>
+                                    <p class="card__block-text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 2 2.png" alt="flower">
+                                    <div class="card__block-number">
+                                        <span>3.1</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 2 (flower)
+                                    </h3>
+                                    <p class="card__block-text">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 4 1.png" alt="leaf">
+                                    <div class="card__block-number">
+                                        <span>1.2</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 3 (leaf)
+                                    </h3>
+                                    <p class="card__block-text">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 1 1 1.png" alt="wood">
+                                    <div class="card__block-number">
+                                        <span>1.2</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 4 (wood)
+                                    </h3>
+                                    <p class="card__block-text">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 3 2.png" alt="Plant">
+                                    <div class="card__block-number">
+                                        <span>2.4</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 1 (plant)
+                                    </h3>
+                                    <p class="card__block-text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 2 2.png" alt="flower">
+                                    <div class="card__block-number">
+                                        <span>3.1</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 2 (flower)
+                                    </h3>
+                                    <p class="card__block-text">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 4 1.png" alt="leaf">
+                                    <div class="card__block-number">
+                                        <span>1.2</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 3 (leaf)
+                                    </h3>
+                                    <p class="card__block-text">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 1 1 1.png" alt="wood">
+                                    <div class="card__block-number">
+                                        <span>1.2</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 4 (wood)
+                                    </h3>
+                                    <p class="card__block-text">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 3 2.png" alt="Plant">
+                                    <div class="card__block-number">
+                                        <span>2.4</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 1 (plant)
+                                    </h3>
+                                    <p class="card__block-text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 2 2.png" alt="flower">
+                                    <div class="card__block-number">
+                                        <span>3.1</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 2 (flower)
+                                    </h3>
+                                    <p class="card__block-text">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 4 1.png" alt="leaf">
+                                    <div class="card__block-number">
+                                        <span>1.2</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 3 (leaf)
+                                    </h3>
+                                    <p class="card__block-text">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__block">
+                                <div class="card__block-image">
+                                    <img src="img/Layer 1 1 1.png" alt="wood">
+                                    <div class="card__block-number">
+                                        <span>1.2</span>
+                                    </div>
+                                </div>
+                                <div class="card__block-aitem">
+                                    <h3 class="card__block-title">
+                                        Fig. 4 (wood)
+                                    </h3>
+                                    <p class="card__block-text">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
+                                    <a href="#" class="card__block-button button">
+                                        Подробнее
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination">
+                    </div>
+                    <div class="swiper-prev">
+                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM26 7L1 7V9L26 9V7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="swiper-next">
+                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.2929L19.3431 0.928934C18.9526 0.538409 18.3195 0.538409 17.9289 0.928934C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM-8.74228e-08 9L25 9L25 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="artifact">
+            <div class="container">
+                <h2>Новые артефакты</h2>
+                <div class="artifact__body">
+                    <div class="artifact__body-img">
+                        <img src="img/arifacts.png" alt="Artifacts">
+                    </div>
+                    <div class="artifact__block">
+                        <h3>Kurische Nehrung 24</h3>
+                        <p class="block-text">
+                            Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами. 
+                            Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы. <br /> <br />
+                            Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами. 
+                            Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.
+                        </p>
+                        <a href="#" class="arifact__block-link">
+                            Читать далее
+                            <svg width="44" height="15" viewBox="0 0 44 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43.7071 8.20711C44.0976 7.81658 44.0976 7.18342 43.7071 6.79289L37.3431 0.428932C36.9526 0.0384078 36.3195 0.0384078 35.9289 0.428932C35.5384 0.819457 35.5384 1.45262 35.9289 1.84315L41.5858 7.5L35.9289 13.1569C35.5384 13.5474 35.5384 14.1805 35.9289 14.5711C36.3195 14.9616 36.9526 14.9616 37.3431 14.5711L43.7071 8.20711ZM0 8.5L43 8.5V6.5L0 6.5L0 8.5Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help">
+            <div class="container">
+                <div class="help__body">
+                    <h2>Помочь проекту</h2>
+                    <p class="hero__text">
+                        Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                    </p>
+                    <form action="/" method="get" class="help__form">
+                        <span id="error-text">Недопустимый формат</span>
+                        <input type="text" name="name" id="name" placeholder="Имя" required>
+                        <input type="email" name="mail" id="mail" placeholder="Email" required>
+                        <button type="submit" class="button help__body-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <nav class="footer__social">
+            <a href="#" class="footer__social-link">
+                <svg height="26px" width="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="0 0 461.001 461.001" xml:space="preserve">
+                    <g>
+                    <path style="fill:currentColor;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+                    c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+                    C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+                    c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="footer__social-link">
+                <svg height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 408.788 408.788" xml:space="preserve">
+                    <path style="fill:currentColor;" d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085
+                        h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882
+                        v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955
+                        l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087
+                        c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085
+                        C408.786,24.662,384.124,0,353.701,0z"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__social-link">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9962 0.0078125C8.73824 0.0078125 8.32971 0.021622 7.05019 0.080003C5.77333 0.138241 4.90129 0.341051 4.13824 0.637622C3.34938 0.944146 2.68038 1.35434 2.01343 2.02124C1.34652 2.68819 0.936333 3.35719 0.629809 4.14605C0.333238 4.9091 0.130429 5.78115 0.0721905 7.058C0.0138095 8.33753 0 8.74605 0 12.0041C0 15.262 0.0138095 15.6705 0.0721905 16.9501C0.130429 18.2269 0.333238 19.099 0.629809 19.862C0.936333 20.6509 1.34652 21.3199 2.01343 21.9868C2.68038 22.6537 3.34938 23.0639 4.13824 23.3705C4.90129 23.667 5.77333 23.8698 7.05019 23.9281C8.32971 23.9864 8.73824 24.0002 11.9962 24.0002C15.2542 24.0002 15.6627 23.9864 16.9422 23.9281C18.2191 23.8698 19.0911 23.667 19.8542 23.3705C20.643 23.0639 21.312 22.6537 21.979 21.9868C22.6459 21.3199 23.0561 20.6509 23.3627 19.862C23.6592 19.099 23.862 18.2269 23.9202 16.9501C23.9786 15.6705 23.9924 15.262 23.9924 12.0041C23.9924 8.74605 23.9786 8.33753 23.9202 7.058C23.862 5.78115 23.6592 4.9091 23.3627 4.14605C23.0561 3.35719 22.6459 2.68819 21.979 2.02124C21.312 1.35434 20.643 0.944146 19.8542 0.637622C19.0911 0.341051 18.2191 0.138241 16.9422 0.080003C15.6627 0.021622 15.2542 0.0078125 11.9962 0.0078125ZM7.99748 12.0041C7.99748 14.2125 9.78776 16.0028 11.9962 16.0028C14.2047 16.0028 15.995 14.2125 15.995 12.0041C15.995 9.79557 14.2047 8.00529 11.9962 8.00529C9.78776 8.00529 7.99748 9.79557 7.99748 12.0041ZM5.836 12.0041C5.836 8.60181 8.594 5.84381 11.9962 5.84381C15.3984 5.84381 18.1564 8.60181 18.1564 12.0041C18.1564 15.4062 15.3984 18.1642 11.9962 18.1642C8.594 18.1642 5.836 15.4062 5.836 12.0041ZM18.3998 7.03996C19.1949 7.03996 19.8394 6.39548 19.8394 5.60043C19.8394 4.80538 19.1949 4.16086 18.3998 4.16086C17.6048 4.16086 16.9603 4.80538 16.9603 5.60043C16.9603 6.39548 17.6048 7.03996 18.3998 7.03996Z" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__social-link">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 2.55654C23.1169 2.94873 22.168 3.21203 21.1724 3.3327C22.1899 2.72384 22.9688 1.75844 23.3363 0.609283C22.3846 1.17426 21.3288 1.58291 20.2098 1.80506C19.313 0.84789 18.0322 0.25 16.6171 0.25C13.8965 0.25 11.6915 2.45232 11.6915 5.173C11.6915 5.5597 11.7353 5.93544 11.8176 6.29473C7.72575 6.08903 4.09736 4.1308 1.67021 1.14958C1.24786 1.87637 1.00377 2.72384 1.00377 3.62616C1.00377 5.33481 1.87316 6.84051 3.19232 7.72363C2.38601 7.69895 1.62633 7.47679 0.962633 7.10654V7.16962C0.962633 9.5557 2.66027 11.5441 4.9119 11.9966C4.50051 12.1091 4.06445 12.1694 3.61467 12.1694C3.29654 12.1694 2.98937 12.1392 2.69044 12.0816C3.31574 14.0371 5.13404 15.4605 7.28694 15.5017C5.60302 16.8209 3.48303 17.608 1.17381 17.608C0.77614 17.608 0.386699 17.5861 0 17.5395C2.18032 18.9354 4.76654 19.75 7.54748 19.75C16.6034 19.75 21.5564 12.2489 21.5564 5.74346C21.5564 5.52954 21.5509 5.31835 21.5427 5.10717C22.5053 4.41055 23.3418 3.54388 24 2.55654Z" fill="currentColor"/>
+                </svg>
+            </a>
+        </nav>
+        <div class="footer__copy">
+            ЯН ® 2025
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
